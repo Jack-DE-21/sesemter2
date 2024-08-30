@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    width: 100px;
+}
+
+.hero {
+    background: url('../images/background.jpg') no-repeat center center/cover;
+    color: rgb(8, 8, 8);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+/* Media Queries */
+@media (max-width: 7608px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.booking-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.booking-form .field {
+    margin-bottom: 20px;
+}
+
+
+/* Gallery Section Styles */
+.gallery {
+    padding: 550px 0;
+    background: url('pexels-wendywei-1190297.jpg') no-repeat center center/cover;
+    color: #fff; /* Ensure text is readable against background image */
+    text-align: center;
+    position: relative;
+}
+
+.gallery h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #fff; /* Adjust text color if needed */
+}
+
+.ui.card {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for cards */
+}
+
+.ui.card .image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.ui.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ui.card .content {
+    padding: 15px;
+}
+
+
+
+/* Add this to your style.css file or within a <style> block in your HTML */
+.ui.grid {
+    margin-bottom: 200px; /* Add space below the row with the image */
+}
+
+.ui.cards {
+    margin-top: 40px; /* Add space above the cards section */
+}
+
+.hero {
+    padding: 10px 0; /* Adjust padding for the hero section */
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff; /* Ensure text color contrasts with background */
+    background-image: url('p'); /* Add your hero background image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px; /* Adjust padding for the hero content */
+    border-radius: 10px;
+}
+
+.card {
+    margin-bottom: 20px; /* Add space between individual cards */
+}
+
+

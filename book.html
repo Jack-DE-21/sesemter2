@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book - Summer Music Festival Ireland</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for white text */
+        h2, label {
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="pexels-pixabay-258804.jpg" alt="Festival Logo" class="logo">
+            <nav class="ui menu">
+                <a class="item" href="index.html">Home</a>
+                <a class="item" href="book.html">Book</a>
+                <a class="item" href="gallery.html">Gallery</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="ui container">
+            <h2>Book Your Tickets</h2>
+            <form class="ui form booking-form">
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field">
+                    <label for="ticket">Ticket Type:</label>
+                    <select id="ticket" name="ticket" class="ui dropdown">
+                        <option value="general">General Admission</option>
+                        <option value="vip">VIP Admission</option>
+                        <option value="weekend">Weekend Pass</option>
+                    </select>
+                </div>
+                <br>
+                <button type="submit" class="ui button">Book Now</button>
+                <br>
+            </form>
+        </section>
+<br>
+        <section class="ui container">
+            <h2>Ticket Prices</h2>
+            <table class="ui celled table">
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General Admission</td>
+                        <td>€50</td>
+                    </tr>
+                    <tr>
+                        <td>VIP Admission</td>
+                        <td>€120</td>
+                    </tr>
+                    <tr>
+                        <td>Weekend Pass</td>
+                        <td>€200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <p>&copy; 2024 Summer Music Festival. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
